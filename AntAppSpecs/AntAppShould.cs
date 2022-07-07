@@ -5,26 +5,16 @@ namespace AntAppSpecs
 {
     public class AntAppShould
     {
-        [Test]
-        public void create_grid_with_3x3_dimension()
+        [TestCase(3)]
+        [TestCase(5)]
+        public void create_grid_with_specified_dimension(int dimension)
         {
-            var antApp = new AntApp.AntApp(3);
+            var antApp = new AntApp.AntApp(dimension);
 
             var grid = antApp.GetGrid();
-            grid.Length.Should().Be(9);
-            grid.GetLength(0).Should().Be(3);
-            grid.GetLength(1).Should().Be(3);
-        }
-
-        [Test]
-        public void create_grid_with_5x5_dimension()
-        {
-            var antApp = new AntApp.AntApp(5);
-
-            var grid = antApp.GetGrid();
-            grid.Length.Should().Be(25);
-            grid.GetLength(0).Should().Be(5);
-            grid.GetLength(1).Should().Be(5);
+            grid.Length.Should().Be(dimension * dimension);
+            grid.GetLength(0).Should().Be(dimension);
+            grid.GetLength(1).Should().Be(dimension);
         }
     }
 }
