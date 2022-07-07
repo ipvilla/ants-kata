@@ -14,7 +14,6 @@ namespace AntAppSpecs
             grid.Length.Should().Be(9);
             grid.GetLength(0).Should().Be(3);
             grid.GetLength(1).Should().Be(3);
-            grid.GetLength(2).Should().Be(3);
         }
     }
 }
