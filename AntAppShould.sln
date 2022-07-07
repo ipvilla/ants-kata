@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntAppSpecs", "AntAppSpecs\AntAppSpecs.csproj", "{3ABF2178-9610-4A2B-AC5D-2490B8A79E7B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntApp", "AntApp\AntApp.csproj", "{A9AE3685-9DB3-4550-B712-0E45EA3CB24C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3ABF2178-9610-4A2B-AC5D-2490B8A79E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ABF2178-9610-4A2B-AC5D-2490B8A79E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ABF2178-9610-4A2B-AC5D-2490B8A79E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AE3685-9DB3-4550-B712-0E45EA3CB24C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AE3685-9DB3-4550-B712-0E45EA3CB24C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AE3685-9DB3-4550-B712-0E45EA3CB24C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AE3685-9DB3-4550-B712-0E45EA3CB24C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
