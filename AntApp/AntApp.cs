@@ -6,9 +6,9 @@ namespace AntAppSpecs
         {
         }
 
-        public char[][] GetGrid()
+        public char[,] GetGrid()
         {
-            throw new System.NotImplementedException();
+            return new char[3,3];
         }
     }
 }
