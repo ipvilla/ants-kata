@@ -8,7 +8,7 @@ namespace AntAppSpecs
         [Test]
         public void create_grid_with_3x3_dimension()
         {
-            var antApp = new AntApp(3);
+            var antApp = new AntApp.AntApp(3);
 
             var grid = antApp.GetGrid();
             grid.Length.Should().Be(9);
@@ -19,7 +19,7 @@ namespace AntAppSpecs
         [Test]
         public void create_grid_with_5x5_dimension()
         {
-            var antApp = new AntApp(5);
+            var antApp = new AntApp.AntApp(5);
 
             var grid = antApp.GetGrid();
             grid.Length.Should().Be(25);
