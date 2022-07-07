@@ -15,5 +15,16 @@ namespace AntAppSpecs
             grid.GetLength(0).Should().Be(3);
             grid.GetLength(1).Should().Be(3);
         }
+
+        [Test]
+        public void create_grid_with_5x5_dimension()
+        {
+            var antApp = new AntApp(5);
+
+            var grid = antApp.GetGrid();
+            grid.Length.Should().Be(25);
+            grid.GetLength(0).Should().Be(5);
+            grid.GetLength(1).Should().Be(5);
+        }
     }
 }
