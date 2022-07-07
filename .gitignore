@@ -1,0 +1,13 @@
+
+*.suo
+*.user
+*.orig
+*.rej
+*.log
+*.nugetreferenceswitcher
+.vs/
+obj/
+bin/
+packages/
+**/*localsettings*.json
+**/offlinesettings.json
