@@ -6,7 +6,7 @@ namespace AntApp
 
         public AntApp(int dimension)
         {
-            if (dimension == 2)
+            if (dimension == 2 || dimension == 4)
             {
                 throw new CanNotBuildEvenSizedGridException();
             }
