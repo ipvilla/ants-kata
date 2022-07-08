@@ -1,3 +1,5 @@
+using System;
+using AntApp;
 using FluentAssertions;
 using NUnit.Framework;
 
@@ -15,6 +17,14 @@ namespace AntAppSpecs
             grid.Length.Should().Be(dimension * dimension);
             grid.GetLength(0).Should().Be(dimension);
             grid.GetLength(1).Should().Be(dimension);
+        }
+
+        [Test]
+        public void throw_grid_can_not_build_even_sized_grid_exception_when_size_is_2()
+        {
+            Action action = () => new AntApp.AntApp(2);
+
+            action.Should().Throw<CanNotBuildEvenSizedGridException>();
         }
     }
 }
