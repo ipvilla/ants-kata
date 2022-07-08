@@ -6,6 +6,10 @@ namespace AntApp
 
         public AntApp(int dimension)
         {
+            if (dimension == 2)
+            {
+                throw new CanNotBuildEvenSizedGridException();
+            }
             grid = new char[dimension, dimension];
         }
 
