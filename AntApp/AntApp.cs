@@ -4,13 +4,13 @@ namespace AntApp
     {
         private readonly char[,] grid;
 
-        public AntApp(int dimension)
+        public AntApp(int gridSize)
         {
-            if (dimension == 2 || dimension == 4)
+            if (gridSize % 2 == 0)
             {
                 throw new CanNotBuildEvenSizedGridException();
             }
-            grid = new char[dimension, dimension];
+            grid = new char[gridSize, gridSize];
         }
 
         public char[,] GetGrid()
