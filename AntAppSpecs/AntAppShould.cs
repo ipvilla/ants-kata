@@ -26,5 +26,13 @@ namespace AntAppSpecs
 
             action.Should().Throw<CanNotBuildEvenSizedGridException>();
         }
+
+        [Test]
+        public void throw_grid_can_not_build_even_sized_grid_exception_when_size_is_4()
+        {
+            Action action = () => new AntApp.AntApp(4);
+
+            action.Should().Throw<CanNotBuildEvenSizedGridException>();
+        }
     }
 }
