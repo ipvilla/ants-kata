@@ -30,7 +30,7 @@ namespace AntAppSpecs
 
         [TestCase(3, 1)]
         [TestCase(7, 3)]
-        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_3(int gridSize, int middleCellPosition)
+        public void initialize_grid_with_the_ant_in_the_middle(int gridSize, int middleCellPosition)
         {
             var antApp = new AntApp.AntApp(gridSize);
 
