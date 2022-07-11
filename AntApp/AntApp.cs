@@ -1,4 +1,4 @@
-namespace AntApp
+﻿namespace AntApp
 {
     public class AntApp
     {
@@ -11,6 +11,8 @@ namespace AntApp
                 throw new CanNotBuildEvenSizedGridException();
             }
             grid = new char[gridSize, gridSize];
+
+            grid[1, 1] = 'A';
         }
 
         public char[,] GetGrid()
