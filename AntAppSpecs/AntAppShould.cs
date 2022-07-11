@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using AntApp;
 using FluentAssertions;
 using NUnit.Framework;
@@ -26,6 +26,16 @@ namespace AntAppSpecs
             Action action = () => new AntApp.AntApp(gridSize);
 
             action.Should().Throw<CanNotBuildEvenSizedGridException>();
+        }
+
+        [Test]
+        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_3()
+        {
+            var antApp = new AntApp.AntApp(3);
+
+            var grid = antApp.GetGrid();
+
+            grid[1, 1].Should().Be('A');
         }
     }
 }
