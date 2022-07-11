@@ -37,5 +37,15 @@ namespace AntAppSpecs
 
             grid[1, 1].Should().Be('A');
         }
+
+        [Test]
+        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_7()
+        {
+            var antApp = new AntApp.AntApp(7);
+
+            var grid = antApp.GetGrid();
+
+            grid[3, 3].Should().Be('A');
+        }
     }
 }
