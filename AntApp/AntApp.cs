@@ -12,10 +12,8 @@
             }
             grid = new char[gridSize, gridSize];
 
-            if(gridSize == 7)
-                grid[3, 3] = 'A';
-            else
-                grid[1, 1] = 'A';
+            int middleCellPosition = gridSize / 2;
+            grid[middleCellPosition, middleCellPosition] = 'A';
         }
 
         public char[,] GetGrid()

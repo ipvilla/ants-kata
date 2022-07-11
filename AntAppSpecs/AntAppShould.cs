@@ -28,24 +28,15 @@ namespace AntAppSpecs
             action.Should().Throw<CanNotBuildEvenSizedGridException>();
         }
 
-        [Test]
-        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_3()
+        [TestCase(3, 1)]
+        [TestCase(7, 3)]
+        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_3(int gridSize, int middleCellPosition)
         {
-            var antApp = new AntApp.AntApp(3);
+            var antApp = new AntApp.AntApp(gridSize);
 
             var grid = antApp.GetGrid();
 
-            grid[1, 1].Should().Be('A');
-        }
-
-        [Test]
-        public void initialize_grid_with_the_ant_in_the_middle_for_grid_of_size_7()
-        {
-            var antApp = new AntApp.AntApp(7);
-
-            var grid = antApp.GetGrid();
-
-            grid[3, 3].Should().Be('A');
+            grid[middleCellPosition, middleCellPosition].Should().Be('A');
         }
     }
 }
