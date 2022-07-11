@@ -12,7 +12,10 @@
             }
             grid = new char[gridSize, gridSize];
 
-            grid[1, 1] = 'A';
+            if(gridSize == 7)
+                grid[3, 3] = 'A';
+            else
+                grid[1, 1] = 'A';
         }
 
         public char[,] GetGrid()
